@@ -57,6 +57,24 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "gray-light": "hsl(var(--gray-light))",
+        "gray-medium": "hsl(var(--gray-medium))",
+        "gray-dark": "hsl(var(--gray-dark))",
+      },
+      backgroundImage: {
+        "gradient-subtle": "var(--gradient-subtle)",
+        "gradient-dark": "var(--gradient-dark)",
+      },
+      boxShadow: {
+        elegant: "var(--shadow-elegant)",
+        hover: "var(--shadow-hover)",
+      },
+      transitionTimingFunction: {
+        smooth: "var(--transition-smooth)",
+        bounce: "var(--transition-bounce)",
+      },
+      fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
