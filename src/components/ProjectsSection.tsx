@@ -61,8 +61,9 @@ const projectsContent = {
       {
         title: "Food Veb-sayti",
         description: "Oziq-ovqat brendi uchun zamonaviy, moslashuvchan veb-sayt. Dizayn minimalistik estetika va silliq animatsiyalarni birlashtiradi.",
-        technologies: ["HTML", "CSS", "JavaScript", "SASS"],
-        image: britlexImage
+        technologies: ["HTML", "CSS", "JavaScript"],
+        image: britlexImage,
+        link: "https://food-website-beta-dun.vercel.app/"
       },
       {
         title: "Go'zallik Saloni Veb-sayti",
