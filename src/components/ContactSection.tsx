@@ -35,9 +35,9 @@ const contactContent = {
       send: "Отправить Сообщение"
     },
     info: {
-      email: "amirbek@example.com",
-      phone: "+998 90 123 45 67",
-      location: "Ташкент, Узбекистан"
+      email: "amirbeknodirbekov8@gmail.com",
+      phone: "+998 88 319 66 60",
+      location: "Хорезм, Узбекистан"
     },
     social: "Подписывайтесь в социальных сетях"
   },
