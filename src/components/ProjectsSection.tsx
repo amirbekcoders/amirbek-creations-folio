@@ -71,7 +71,8 @@ const projectsContent = {
         title: "Go'zallik Saloni Veb-sayti",
         description: "Go'zallik saloni uchun chiroyli, oddiy veb-sayt yaratdim. Toza tartib va nozik animatsiyalar bilan foydalanuvchi tajribasini yaxshiladim.",
         technologies: ["ReactJS", "CSS", "Figma", "JavaScript"],
-        image: beautySalonImage
+        image: beautySalonImage,
+        link: ""
       }
     ],
     viewProject: "Loyihani Ko'rish",
