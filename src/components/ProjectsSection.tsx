@@ -132,9 +132,12 @@ export const ProjectsSection = ({ currentLanguage }: ProjectsSectionProps) => {
                     variant="outline"
                     size="sm"
                     className="flex items-center gap-2 hover:bg-primary hover:text-primary-foreground transition-smooth"
+                    asChild
                   >
-                    <ExternalLink size={16} />
-                    {content.viewProject}
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink size={16} />
+                      {content.viewProject}
+                    </a>
                   </Button>
                   <Button
                     variant="ghost"
