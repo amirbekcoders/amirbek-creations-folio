@@ -3,8 +3,6 @@ import { Card } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// Import project images
-import britlexImage from "@/assets/britlex-food-project.jpg";
 import beautySalonImage from "@/assets/beauty-salon-project.jpg";
 
 interface ProjectsSectionProps {
@@ -16,12 +14,6 @@ const projectsContent = {
     title: "Featured Projects",
     subtitle: "Recent work showcasing modern design and development",
     projects: [
-      {
-        title: "Britlex Food Website",
-        description: "A modern, responsive website for Britlex Food. The design combines minimalist aesthetics with smooth animations for an enhanced user experience.",
-        technologies: ["HTML", "CSS", "JavaScript", "SASS"],
-        image: britlexImage
-      },
       {
         title: "Beauty Salon Website",
         description: "Designed a beautiful, simple website for a beauty salon with a clean layout and subtle animations to make the user experience smooth and enjoyable.",
@@ -37,12 +29,6 @@ const projectsContent = {
     subtitle: "Недавние работы, демонстрирующие современный дизайн и разработку",
     projects: [
       {
-        title: "Сайт Britlex Food",
-        description: "Современный, адаптивный сайт для Britlex Food. Дизайн сочетает минималистичную эстетику с плавными анимациями для улучшенного пользовательского опыта.",
-        technologies: ["HTML", "CSS", "JavaScript", "SASS"],
-        image: britlexImage
-      },
-      {
         title: "Сайт Салона Красоты",
         description: "Разработал красивый, простой сайт для салона красоты с чистым макетом и тонкими анимациями для плавного и приятного пользовательского опыта.",
         technologies: ["ReactJS", "CSS", "Figma", "JavaScript"],
@@ -56,12 +42,6 @@ const projectsContent = {
     title: "Taniqli Loyihalar",
     subtitle: "Zamonaviy dizayn va ishlab chiqishni namoyish etuvchi so'nggi ishlar",
     projects: [
-      {
-        title: "Britlex Food Veb-sayti",
-        description: "Britlex Food uchun zamonaviy, moslashuvchan veb-sayt. Dizayn minimalistik estetika va silliq animatsiyalarni birlashtiradi.",
-        technologies: ["HTML", "CSS", "JavaScript", "SASS"],
-        image: britlexImage
-      },
       {
         title: "Go'zallik Saloni Veb-sayti",
         description: "Go'zallik saloni uchun chiroyli, oddiy veb-sayt yaratdim. Toza tartib va nozik animatsiyalar bilan foydalanuvchi tajribasini yaxshiladim.",
@@ -89,7 +69,7 @@ export const ProjectsSection = ({ currentLanguage }: ProjectsSectionProps) => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
           {content.projects.map((project, index) => (
             <Card
               key={index}
