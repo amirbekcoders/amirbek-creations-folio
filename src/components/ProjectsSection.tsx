@@ -19,14 +19,16 @@ const projectsContent = {
       {
         title: "Food Website",
         description: "A modern, responsive website for a food brand. The design combines minimalist aesthetics with smooth animations for an enhanced user experience.",
-        technologies: ["HTML", "CSS", "JavaScript", "SASS"],
-        image: britlexImage
+        technologies: ["HTML", "CSS", "JavaScript"],
+        image: britlexImage,
+        link: "https://food-website-beta-dun.vercel.app/"
       },
       {
         title: "Beauty Salon Website",
         description: "Designed a beautiful, simple website for a beauty salon with a clean layout and subtle animations to make the user experience smooth and enjoyable.",
         technologies: ["ReactJS", "CSS", "Figma", "JavaScript"],
-        image: beautySalonImage
+        image: beautySalonImage,
+        link: ""
       }
     ],
     viewProject: "View Project",
@@ -39,14 +41,16 @@ const projectsContent = {
       {
         title: "Сайт Food",
         description: "Современный, адаптивный сайт для продуктового бренда. Дизайн сочетает минималистичную эстетику с плавными анимациями для улучшенного пользовательского опыта.",
-        technologies: ["HTML", "CSS", "JavaScript", "SASS"],
-        image: britlexImage
+        technologies: ["HTML", "CSS", "JavaScript"],
+        image: britlexImage,
+        link: "https://food-website-beta-dun.vercel.app/"
       },
       {
         title: "Сайт Салона Красоты",
         description: "Разработал красивый, простой сайт для салона красоты с чистым макетом и тонкими анимациями для плавного и приятного пользовательского опыта.",
         technologies: ["ReactJS", "CSS", "Figma", "JavaScript"],
-        image: beautySalonImage
+        image: beautySalonImage,
+        link: ""
       }
     ],
     viewProject: "Посмотреть Проект",
@@ -59,14 +63,16 @@ const projectsContent = {
       {
         title: "Food Veb-sayti",
         description: "Oziq-ovqat brendi uchun zamonaviy, moslashuvchan veb-sayt. Dizayn minimalistik estetika va silliq animatsiyalarni birlashtiradi.",
-        technologies: ["HTML", "CSS", "JavaScript", "SASS"],
-        image: britlexImage
+        technologies: ["HTML", "CSS", "JavaScript"],
+        image: britlexImage,
+        link: "https://food-website-beta-dun.vercel.app/"
       },
       {
         title: "Go'zallik Saloni Veb-sayti",
         description: "Go'zallik saloni uchun chiroyli, oddiy veb-sayt yaratdim. Toza tartib va nozik animatsiyalar bilan foydalanuvchi tajribasini yaxshiladim.",
         technologies: ["ReactJS", "CSS", "Figma", "JavaScript"],
-        image: beautySalonImage
+        image: beautySalonImage,
+        link: ""
       }
     ],
     viewProject: "Loyihani Ko'rish",
@@ -129,9 +135,12 @@ export const ProjectsSection = ({ currentLanguage }: ProjectsSectionProps) => {
                     variant="outline"
                     size="sm"
                     className="flex items-center gap-2 hover:bg-primary hover:text-primary-foreground transition-smooth"
+                    asChild
                   >
-                    <ExternalLink size={16} />
-                    {content.viewProject}
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink size={16} />
+                      {content.viewProject}
+                    </a>
                   </Button>
                   <Button
                     variant="ghost"
