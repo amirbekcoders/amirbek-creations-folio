@@ -57,8 +57,8 @@ const projectsContent = {
     subtitle: "Zamonaviy dizayn va ishlab chiqishni namoyish etuvchi so'nggi ishlar",
     projects: [
       {
-        title: "Britlex Food Veb-sayti",
-        description: "Britlex Food uchun zamonaviy, moslashuvchan veb-sayt. Dizayn minimalistik estetika va silliq animatsiyalarni birlashtiradi.",
+        title: "Food Veb-sayti",
+        description: "Oziq-ovqat brendi uchun zamonaviy, moslashuvchan veb-sayt. Dizayn minimalistik estetika va silliq animatsiyalarni birlashtiradi.",
         technologies: ["HTML", "CSS", "JavaScript", "SASS"],
         image: britlexImage
       },
