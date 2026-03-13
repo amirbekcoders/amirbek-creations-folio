@@ -19,8 +19,9 @@ const projectsContent = {
       {
         title: "Food Website",
         description: "A modern, responsive website for a food brand. The design combines minimalist aesthetics with smooth animations for an enhanced user experience.",
-        technologies: ["HTML", "CSS", "JavaScript", "SASS"],
-        image: britlexImage
+        technologies: ["HTML", "CSS", "JavaScript"],
+        image: britlexImage,
+        link: "https://food-website-beta-dun.vercel.app/"
       },
       {
         title: "Beauty Salon Website",
