@@ -49,7 +49,8 @@ const projectsContent = {
         title: "Сайт Салона Красоты",
         description: "Разработал красивый, простой сайт для салона красоты с чистым макетом и тонкими анимациями для плавного и приятного пользовательского опыта.",
         technologies: ["ReactJS", "CSS", "Figma", "JavaScript"],
-        image: beautySalonImage
+        image: beautySalonImage,
+        link: ""
       }
     ],
     viewProject: "Посмотреть Проект",
