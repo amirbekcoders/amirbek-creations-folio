@@ -51,9 +51,9 @@ const contactContent = {
       send: "Xabar Yuborish"
     },
     info: {
-      email: "amirbek@example.com",
-      phone: "+998 90 123 45 67",
-      location: "Toshkent, O'zbekiston"
+      email: "amirbeknodirbekov8@gmail.com",
+      phone: "+998 88 319 66 60",
+      location: "Xorazm, O'zbekiston"
     },
     social: "Ijtimoiy tarmoqlarda kuzating"
   }
