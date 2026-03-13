@@ -17,8 +17,8 @@ const projectsContent = {
     subtitle: "Recent work showcasing modern design and development",
     projects: [
       {
-        title: "Britlex Food Website",
-        description: "A modern, responsive website for Britlex Food. The design combines minimalist aesthetics with smooth animations for an enhanced user experience.",
+        title: "Food Website",
+        description: "A modern, responsive website for a food brand. The design combines minimalist aesthetics with smooth animations for an enhanced user experience.",
         technologies: ["HTML", "CSS", "JavaScript", "SASS"],
         image: britlexImage
       },
