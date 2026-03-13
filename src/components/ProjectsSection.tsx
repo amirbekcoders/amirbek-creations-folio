@@ -21,14 +21,16 @@ const projectsContent = {
         description: "A modern, responsive website for a food brand. The design combines minimalist aesthetics with smooth animations for an enhanced user experience.",
         technologies: ["HTML", "CSS", "JavaScript"],
         image: britlexImage,
-        link: "https://food-website-beta-dun.vercel.app/"
+        link: "https://food-website-beta-dun.vercel.app/",
+        github: "https://github.com/amirbekcoders/food-website"
       },
       {
         title: "Beauty Salon Website",
         description: "Designed a beautiful, simple website for a beauty salon with a clean layout and subtle animations to make the user experience smooth and enjoyable.",
         technologies: ["ReactJS", "CSS", "Figma", "JavaScript"],
         image: beautySalonImage,
-        link: ""
+        link: "",
+        github: "https://github.com/amirbekcoders/beauty-salon-"
       }
     ],
     viewProject: "View Project",
@@ -43,14 +45,16 @@ const projectsContent = {
         description: "Современный, адаптивный сайт для продуктового бренда. Дизайн сочетает минималистичную эстетику с плавными анимациями для улучшенного пользовательского опыта.",
         technologies: ["HTML", "CSS", "JavaScript"],
         image: britlexImage,
-        link: "https://food-website-beta-dun.vercel.app/"
+        link: "https://food-website-beta-dun.vercel.app/",
+        github: "https://github.com/amirbekcoders/food-website"
       },
       {
         title: "Сайт Салона Красоты",
         description: "Разработал красивый, простой сайт для салона красоты с чистым макетом и тонкими анимациями для плавного и приятного пользовательского опыта.",
         technologies: ["ReactJS", "CSS", "Figma", "JavaScript"],
         image: beautySalonImage,
-        link: ""
+        link: "",
+        github: "https://github.com/amirbekcoders/beauty-salon-"
       }
     ],
     viewProject: "Посмотреть Проект",
@@ -65,14 +69,16 @@ const projectsContent = {
         description: "Oziq-ovqat brendi uchun zamonaviy, moslashuvchan veb-sayt. Dizayn minimalistik estetika va silliq animatsiyalarni birlashtiradi.",
         technologies: ["HTML", "CSS", "JavaScript"],
         image: britlexImage,
-        link: "https://food-website-beta-dun.vercel.app/"
+        link: "https://food-website-beta-dun.vercel.app/",
+        github: "https://github.com/amirbekcoders/food-website"
       },
       {
         title: "Go'zallik Saloni Veb-sayti",
         description: "Go'zallik saloni uchun chiroyli, oddiy veb-sayt yaratdim. Toza tartib va nozik animatsiyalar bilan foydalanuvchi tajribasini yaxshiladim.",
         technologies: ["ReactJS", "CSS", "Figma", "JavaScript"],
         image: beautySalonImage,
-        link: ""
+        link: "",
+        github: "https://github.com/amirbekcoders/beauty-salon-"
       }
     ],
     viewProject: "Loyihani Ko'rish",
@@ -146,9 +152,12 @@ export const ProjectsSection = ({ currentLanguage }: ProjectsSectionProps) => {
                     variant="ghost"
                     size="sm"
                     className="flex items-center gap-2 text-gray-medium hover:text-foreground transition-smooth"
+                    asChild
                   >
-                    <Github size={16} />
-                    {content.viewCode}
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github size={16} />
+                      {content.viewCode}
+                    </a>
                   </Button>
                 </div>
               </div>
