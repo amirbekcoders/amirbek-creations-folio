@@ -19,9 +19,9 @@ const contactContent = {
       send: "Send Message"
     },
     info: {
-      email: "amirbek@example.com",
-      phone: "+998 90 123 45 67",
-      location: "Tashkent, Uzbekistan"
+      email: "amirbeknodirbekov8@gmail.com",
+      phone: "+998 88 319 66 60",
+      location: "Khorezm, Uzbekistan"
     },
     social: "Follow me on social media"
   },
@@ -35,9 +35,9 @@ const contactContent = {
       send: "Отправить Сообщение"
     },
     info: {
-      email: "amirbek@example.com",
-      phone: "+998 90 123 45 67",
-      location: "Ташкент, Узбекистан"
+      email: "amirbeknodirbekov8@gmail.com",
+      phone: "+998 88 319 66 60",
+      location: "Хорезм, Узбекистан"
     },
     social: "Подписывайтесь в социальных сетях"
   },
@@ -51,9 +51,9 @@ const contactContent = {
       send: "Xabar Yuborish"
     },
     info: {
-      email: "amirbek@example.com",
-      phone: "+998 90 123 45 67",
-      location: "Toshkent, O'zbekiston"
+      email: "amirbeknodirbekov8@gmail.com",
+      phone: "+998 88 319 66 60",
+      location: "Xorazm, O'zbekiston"
     },
     social: "Ijtimoiy tarmoqlarda kuzating"
   }
