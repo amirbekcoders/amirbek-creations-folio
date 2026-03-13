@@ -29,7 +29,8 @@ const projectsContent = {
         description: "Designed a beautiful, simple website for a beauty salon with a clean layout and subtle animations to make the user experience smooth and enjoyable.",
         technologies: ["ReactJS", "CSS", "Figma", "JavaScript"],
         image: beautySalonImage,
-        link: ""
+        link: "",
+        github: "https://github.com/amirbekcoders/beauty-salon-"
       }
     ],
     viewProject: "View Project",
