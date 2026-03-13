@@ -40,8 +40,9 @@ const projectsContent = {
       {
         title: "Сайт Food",
         description: "Современный, адаптивный сайт для продуктового бренда. Дизайн сочетает минималистичную эстетику с плавными анимациями для улучшенного пользовательского опыта.",
-        technologies: ["HTML", "CSS", "JavaScript", "SASS"],
-        image: britlexImage
+        technologies: ["HTML", "CSS", "JavaScript"],
+        image: britlexImage,
+        link: "https://food-website-beta-dun.vercel.app/"
       },
       {
         title: "Сайт Салона Красоты",
