@@ -152,9 +152,12 @@ export const ProjectsSection = ({ currentLanguage }: ProjectsSectionProps) => {
                     variant="ghost"
                     size="sm"
                     className="flex items-center gap-2 text-gray-medium hover:text-foreground transition-smooth"
+                    asChild
                   >
-                    <Github size={16} />
-                    {content.viewCode}
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github size={16} />
+                      {content.viewCode}
+                    </a>
                   </Button>
                 </div>
               </div>
