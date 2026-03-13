@@ -69,7 +69,8 @@ const projectsContent = {
         description: "Oziq-ovqat brendi uchun zamonaviy, moslashuvchan veb-sayt. Dizayn minimalistik estetika va silliq animatsiyalarni birlashtiradi.",
         technologies: ["HTML", "CSS", "JavaScript"],
         image: britlexImage,
-        link: "https://food-website-beta-dun.vercel.app/"
+        link: "https://food-website-beta-dun.vercel.app/",
+        github: "https://github.com/amirbekcoders/food-website"
       },
       {
         title: "Go'zallik Saloni Veb-sayti",
