@@ -17,8 +17,8 @@ const projectsContent = {
     subtitle: "Recent work showcasing modern design and development",
     projects: [
       {
-        title: "Britlex Food Website",
-        description: "A modern, responsive website for Britlex Food. The design combines minimalist aesthetics with smooth animations for an enhanced user experience.",
+        title: "Food Website",
+        description: "A modern, responsive website for a food brand. The design combines minimalist aesthetics with smooth animations for an enhanced user experience.",
         technologies: ["HTML", "CSS", "JavaScript", "SASS"],
         image: britlexImage
       },
@@ -37,8 +37,8 @@ const projectsContent = {
     subtitle: "Недавние работы, демонстрирующие современный дизайн и разработку",
     projects: [
       {
-        title: "Сайт Britlex Food",
-        description: "Современный, адаптивный сайт для Britlex Food. Дизайн сочетает минималистичную эстетику с плавными анимациями для улучшенного пользовательского опыта.",
+        title: "Сайт Food",
+        description: "Современный, адаптивный сайт для продуктового бренда. Дизайн сочетает минималистичную эстетику с плавными анимациями для улучшенного пользовательского опыта.",
         technologies: ["HTML", "CSS", "JavaScript", "SASS"],
         image: britlexImage
       },
@@ -57,8 +57,8 @@ const projectsContent = {
     subtitle: "Zamonaviy dizayn va ishlab chiqishni namoyish etuvchi so'nggi ishlar",
     projects: [
       {
-        title: "Britlex Food Veb-sayti",
-        description: "Britlex Food uchun zamonaviy, moslashuvchan veb-sayt. Dizayn minimalistik estetika va silliq animatsiyalarni birlashtiradi.",
+        title: "Food Veb-sayti",
+        description: "Oziq-ovqat brendi uchun zamonaviy, moslashuvchan veb-sayt. Dizayn minimalistik estetika va silliq animatsiyalarni birlashtiradi.",
         technologies: ["HTML", "CSS", "JavaScript", "SASS"],
         image: britlexImage
       },
