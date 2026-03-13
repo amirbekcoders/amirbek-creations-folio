@@ -27,7 +27,8 @@ const projectsContent = {
         title: "Beauty Salon Website",
         description: "Designed a beautiful, simple website for a beauty salon with a clean layout and subtle animations to make the user experience smooth and enjoyable.",
         technologies: ["ReactJS", "CSS", "Figma", "JavaScript"],
-        image: beautySalonImage
+        image: beautySalonImage,
+        link: ""
       }
     ],
     viewProject: "View Project",
