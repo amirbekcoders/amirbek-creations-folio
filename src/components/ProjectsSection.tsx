@@ -45,7 +45,8 @@ const projectsContent = {
         description: "Современный, адаптивный сайт для продуктового бренда. Дизайн сочетает минималистичную эстетику с плавными анимациями для улучшенного пользовательского опыта.",
         technologies: ["HTML", "CSS", "JavaScript"],
         image: britlexImage,
-        link: "https://food-website-beta-dun.vercel.app/"
+        link: "https://food-website-beta-dun.vercel.app/",
+        github: "https://github.com/amirbekcoders/food-website"
       },
       {
         title: "Сайт Салона Красоты",
