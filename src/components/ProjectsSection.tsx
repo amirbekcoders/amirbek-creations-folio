@@ -29,7 +29,7 @@ const projectsContent = {
         description: "Designed a beautiful, simple website for a beauty salon with a clean layout and subtle animations to make the user experience smooth and enjoyable.",
         technologies: ["ReactJS", "CSS", "Figma", "JavaScript"],
         image: beautySalonImage,
-        link: "",
+        link: "https://beauty-salon-nine-eta.vercel.app",
         github: "https://github.com/amirbekcoders/beauty-salon-"
       }
     ],
@@ -53,7 +53,7 @@ const projectsContent = {
         description: "Разработал красивый, простой сайт для салона красоты с чистым макетом и тонкими анимациями для плавного и приятного пользовательского опыта.",
         technologies: ["ReactJS", "CSS", "Figma", "JavaScript"],
         image: beautySalonImage,
-        link: "",
+        link: "https://beauty-salon-nine-eta.vercel.app",
         github: "https://github.com/amirbekcoders/beauty-salon-"
       }
     ],
@@ -77,7 +77,7 @@ const projectsContent = {
         description: "Go'zallik saloni uchun chiroyli, oddiy veb-sayt yaratdim. Toza tartib va nozik animatsiyalar bilan foydalanuvchi tajribasini yaxshiladim.",
         technologies: ["ReactJS", "CSS", "Figma", "JavaScript"],
         image: beautySalonImage,
-        link: "",
+        link: "https://beauty-salon-nine-eta.vercel.app",
         github: "https://github.com/amirbekcoders/beauty-salon-"
       }
     ],
