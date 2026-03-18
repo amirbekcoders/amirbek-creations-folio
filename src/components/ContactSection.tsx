@@ -148,17 +148,23 @@ export const ContactSection = ({ currentLanguage }: ContactSectionProps) => {
                     variant="outline"
                     size="sm"
                     className="flex items-center gap-2 hover:bg-primary hover:text-primary-foreground transition-smooth"
+                    asChild
                   >
-                    <Github size={16} />
-                    GitHub
+                    <a href="https://github.com/amirbekcoders" target="_blank" rel="noopener noreferrer">
+                      <Github size={16} />
+                      GitHub
+                    </a>
                   </Button>
                   <Button
                     variant="outline"
                     size="sm"
                     className="flex items-center gap-2 hover:bg-primary hover:text-primary-foreground transition-smooth"
+                    asChild
                   >
-                    <Linkedin size={16} />
-                    LinkedIn
+                    <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer">
+                      <Linkedin size={16} />
+                      LinkedIn
+                    </a>
                   </Button>
                 </div>
               </div>
