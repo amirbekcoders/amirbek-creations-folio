@@ -77,7 +77,7 @@ const projectsContent = {
         description: "Go'zallik saloni uchun chiroyli, oddiy veb-sayt yaratdim. Toza tartib va nozik animatsiyalar bilan foydalanuvchi tajribasini yaxshiladim.",
         technologies: ["ReactJS", "CSS", "Figma", "JavaScript"],
         image: beautySalonImage,
-        link: "",
+        link: "https://beauty-salon-nine-eta.vercel.app",
         github: "https://github.com/amirbekcoders/beauty-salon-"
       }
     ],
