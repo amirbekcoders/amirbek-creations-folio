@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Shield } from "lucide-react";
 import { LanguageToggle, Language } from "./LanguageToggle";
 
 interface NavigationProps {
@@ -84,10 +86,20 @@ export const Navigation = ({ currentLanguage, onLanguageChange }: NavigationProp
             </button>
           </div>
 
-          <LanguageToggle
-            currentLanguage={currentLanguage}
-            onLanguageChange={onLanguageChange}
-          />
+          <div className="flex items-center gap-3">
+            <Link
+              to="/admin"
+              className="inline-flex items-center gap-2 px-3 py-2 rounded-md border border-border text-foreground hover:bg-accent hover:text-accent-foreground transition-smooth text-sm font-medium"
+              title="Admin Panel"
+            >
+              <Shield className="w-4 h-4" />
+              <span className="hidden sm:inline">Admin</span>
+            </Link>
+            <LanguageToggle
+              currentLanguage={currentLanguage}
+              onLanguageChange={onLanguageChange}
+            />
+          </div>
         </div>
       </div>
     </nav>
