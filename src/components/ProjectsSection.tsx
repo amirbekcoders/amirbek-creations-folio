@@ -164,7 +164,6 @@ export const ProjectsSection = ({ currentLanguage }: ProjectsSectionProps) => {
             </Card>
           ))}
         </div>
-        )}
       </div>
     </section>
   );
