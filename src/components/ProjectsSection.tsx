@@ -88,32 +88,6 @@ const projectsContent = {
 
 export const ProjectsSection = ({ currentLanguage }: ProjectsSectionProps) => {
   const content = projectsContent[currentLanguage];
-  const [dbProjects, setDbProjects] = useState<DbProject[] | null>(null);
-
-  useEffect(() => {
-    supabase
-      .from("projects")
-      .select("id,title,description,image_url,demo_url,github_url,tags")
-      .order("order_index", { ascending: true })
-      .then(({ data }) => setDbProjects(data ?? []));
-  }, []);
-
-  const projectsToShow =
-    dbProjects && dbProjects.length > 0
-      ? dbProjects.map((p) => ({
-          title: p.title,
-          description: p.description ?? "",
-          technologies: p.tags ?? [],
-          image: p.image_url || britlexImage,
-          link: p.demo_url ?? "#",
-          github: p.github_url ?? "#",
-        }))
-      : dbProjects === null
-        ? content.projects
-        : content.projects;
-
-  // If DB has been loaded and is explicitly empty, show nothing
-  const finalProjects = dbProjects && dbProjects.length === 0 ? [] : projectsToShow;
 
   return (
     <section id="projects" className="py-24 bg-background">
@@ -127,11 +101,8 @@ export const ProjectsSection = ({ currentLanguage }: ProjectsSectionProps) => {
           </p>
         </div>
 
-        {finalProjects.length === 0 ? (
-          <p className="text-center text-gray-medium">—</p>
-        ) : (
         <div className="grid md:grid-cols-2 gap-8">
-          {finalProjects.map((project, index) => (
+          {content.projects.map((project, index) => (
             <Card
               key={index}
               className="group cursor-pointer transition-all duration-300 hover:shadow-hover border-border bg-card animate-slide-up"
