@@ -82,6 +82,37 @@ const technologiesContent = {
 
 export const TechnologiesSection = ({ currentLanguage }: TechnologiesSectionProps) => {
   const content = technologiesContent[currentLanguage];
+  const [dbTechs, setDbTechs] = useState<DbTech[] | null>(null);
+
+  useEffect(() => {
+    supabase
+      .from("technologies")
+      .select("id,name,icon,category")
+      .order("order_index", { ascending: true })
+      .then(({ data }) => setDbTechs(data ?? []));
+  }, []);
+
+  const useDb = dbTechs !== null && dbTechs.length > 0;
+  const dbCategories = useDb
+    ? Object.entries(
+        (dbTechs ?? []).reduce<Record<string, DbTech[]>>((acc, t) => {
+          const cat = t.category || "Other";
+          (acc[cat] ??= []).push(t);
+          return acc;
+        }, {}),
+      ).map(([name, items]) => ({
+        name,
+        technologies: items.map((t) => ({ name: `${t.icon ? t.icon + " " : ""}${t.name}`, level: 90, color: "bg-foreground" })),
+      }))
+    : null;
+
+  const categoriesToShow =
+    dbTechs === null
+      ? content.categories
+      : dbTechs.length === 0
+        ? []
+        : dbCategories!;
+
 
   return (
     <section id="technologies" className="py-24 bg-gray-light">
