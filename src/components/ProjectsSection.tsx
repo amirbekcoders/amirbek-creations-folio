@@ -139,8 +139,11 @@ export const ProjectsSection = ({ currentLanguage }: ProjectsSectionProps) => {
           </p>
         </div>
 
+        {finalProjects.length === 0 ? (
+          <p className="text-center text-gray-medium">—</p>
+        ) : (
         <div className="grid md:grid-cols-2 gap-8">
-          {content.projects.map((project, index) => (
+          {finalProjects.map((project, index) => (
             <Card
               key={index}
               className="group cursor-pointer transition-all duration-300 hover:shadow-hover border-border bg-card animate-slide-up"
