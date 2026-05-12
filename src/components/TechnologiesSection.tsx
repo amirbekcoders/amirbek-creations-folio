@@ -126,8 +126,11 @@ export const TechnologiesSection = ({ currentLanguage }: TechnologiesSectionProp
           </p>
         </div>
 
+        {categoriesToShow.length === 0 ? (
+          <p className="text-center text-gray-medium">—</p>
+        ) : (
         <div className="grid md:grid-cols-2 gap-12">
-          {content.categories.map((category, categoryIndex) => (
+          {categoriesToShow.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
               className="animate-slide-up"
