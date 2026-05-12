@@ -166,6 +166,7 @@ export const TechnologiesSection = ({ currentLanguage }: TechnologiesSectionProp
             </div>
           ))}
         </div>
+        )}
       </div>
     </section>
   );
