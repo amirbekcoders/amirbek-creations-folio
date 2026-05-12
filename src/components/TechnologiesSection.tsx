@@ -1,12 +1,8 @@
-import { useEffect, useState } from "react";
 import { Language } from "./LanguageToggle";
-import { supabase } from "@/integrations/supabase/client";
 
 interface TechnologiesSectionProps {
   currentLanguage: Language;
 }
-
-type DbTech = { id: string; name: string; icon: string | null; category: string | null };
 
 const technologiesContent = {
   en: {
