@@ -1,7 +1,9 @@
+import { useEffect, useState } from "react";
 import { Language } from "./LanguageToggle";
 import { Card } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { supabase } from "@/integrations/supabase/client";
 
 // Import project images
 import britlexImage from "@/assets/britlex-food-project.jpg";
@@ -10,6 +12,16 @@ import beautySalonImage from "@/assets/beauty-salon-project.jpg";
 interface ProjectsSectionProps {
   currentLanguage: Language;
 }
+
+type DbProject = {
+  id: string;
+  title: string;
+  description: string | null;
+  image_url: string | null;
+  demo_url: string | null;
+  github_url: string | null;
+  tags: string[] | null;
+};
 
 const projectsContent = {
   en: {
